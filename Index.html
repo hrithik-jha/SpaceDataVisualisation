@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <html>
+	<head>
+        <title>IMF Visualisation</title>
+        <meta charset="utf-8">
+
+		<link href="c3.css" rel="stylesheet" type="text/css">
+        <link rel='stylesheet' href='style.css' />
+        
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="javascripts/c3.min.js"></script>
+        <script src="javascripts/papaparse.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> 
+  	</head>
+  	<body>
+        <p>
+            <h1>
+                Visualisation of IMF data.
+            </h1>
+            <h3>
+                This graph is made with data available by 
+                <a href = 'https://cdaweb.gsfc.nasa.gov/pub/data/omni/low_res_omni/omni_m2017.dat'>
+                    this website.
+                </a>
+                <br>
+                It is a graph plotted with the values of BR_RTN, BT_RTN and BN_RTN against Heliographic Inertial Longitude
+                of the Earth
+                <br>
+                Only single values of HILon are taken.
+            </h3>
+        </p>
+  		<br>
+    	<div class="container">
+            <div id="chart"></div>
+            <div id="chart1"></div>
+        </div>
+        <p>
+            <h4>
+                By Hrithik Jha
+            </h4>
+        </p>
+		<script src="javascripts/create-graph.js"></script>
+  	</body>
+</html>
+</html>
